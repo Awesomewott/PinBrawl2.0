@@ -9,9 +9,13 @@ public class GameController : MonoBehaviour
 {
     public GameObject titleScreen;
     public GameObject optionScreen;
+    public GameObject CreditsScreen;
     public GameObject pauseScreen;
     public GameObject deathScreen;
-    
+
+    public AudioMixer audioMixer;
+
+    public Slider masterSlider;
 
     bool isPaused = false;
     bool isDead = false;
@@ -30,12 +34,12 @@ public class GameController : MonoBehaviour
     }
     void Start()
     {
-        //audioMixer.SetFloat("MasterVolume", PlayerPrefs.GetFloat("MasterVolume",0));
-        //audioMixer.SetFloat("MusicVolume", PlayerPrefs.GetFloat("MusicVolume",0));
-        //audioMixer.SetFloat("SFXVolume", PlayerPrefs.GetFloat("SFXVolume",0));
+        audioMixer.SetFloat("MasterVolume", PlayerPrefs.GetFloat("MasterVolume",0));
+        audioMixer.SetFloat("MusicVolume", PlayerPrefs.GetFloat("MusicVolume",0));
+        audioMixer.SetFloat("SFXVolume", PlayerPrefs.GetFloat("SFXVolume",0));
 
-        //audioMixer.GetFloat("MasterVlume", out float volume);
-        //masterSlider.value = volume;
+        audioMixer.GetFloat("MasterVlume", out float volume);
+        masterSlider.value = volume;
     }
     
   
@@ -85,6 +89,11 @@ public class GameController : MonoBehaviour
     {
         titleScreen.SetActive(false);
         optionScreen.SetActive(true);
+    }
+    public void OnCreditsScreen()
+    {
+        titleScreen.SetActive(false);
+        CreditsScreen.SetActive(true);
     }
 
     public void OnPauseScreen()
@@ -146,18 +155,18 @@ public class GameController : MonoBehaviour
 
     public void OnMasterVolume(float level)
     {
-        //audioMixer.SetFloat("MasterVolume", level);
-        //PlayerPrefs.SetFloat("MasterVolume", level);
+        audioMixer.SetFloat("MasterVolume", level);
+        PlayerPrefs.SetFloat("MasterVolume", level);
     } 
     
     public void OnMusicVolume(float level)
     {
-    //    audioMixer.SetFloat("MusicVolume", level);
-    //    PlayerPrefs.SetFloat("MusicVolume", level);
+        audioMixer.SetFloat("MusicVolume", level);
+        PlayerPrefs.SetFloat("MusicVolume", level);
     }
     public void OnSFXVolume(float level)
     {
-    //    audioMixer.SetFloat("SFXVolume", level);
-    //    PlayerPrefs.SetFloat("SFXVolume", level);
+        audioMixer.SetFloat("SFXVolume", level);
+        PlayerPrefs.SetFloat("SFXVolume", level);
     }
 }
