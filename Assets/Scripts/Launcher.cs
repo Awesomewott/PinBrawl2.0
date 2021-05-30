@@ -34,11 +34,13 @@ public class Launcher : MonoBehaviour
             if (Input.GetKeyDown("space"))
             {
                 isKeyPress = true;
+                Debug.Log("Pressed");
             }
 
             if (Input.GetKeyUp("space"))
             {
                 isKeyPress = false;
+                Debug.Log("Unpressed");
             }
 
             // on keyboard press or touch hotspot
