@@ -288,11 +288,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 37047221}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: [{m_Target: {fileID: 2085590284}, m_TargetAssemblyTypeName: 'GameController,
-            Assembly-CSharp', m_MethodName: OnPause, m_Mode: 1, m_Arguments: {m_ObjectArgument: {
-              fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object, UnityEngine',
-            m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: '', m_BoolArgument: 0},
-          m_CallState: 2}]
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &37047221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,11 +794,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 199299133}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: [{m_Target: {fileID: 2085590284}, m_TargetAssemblyTypeName: 'GameController,
-            Assembly-CSharp', m_MethodName: OnLoadGameScene, m_Mode: 5, m_Arguments: {
-            m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
-              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: SampleScene,
-            m_BoolArgument: 0}, m_CallState: 2}]
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnLoadGameScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &199299133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1373,7 +1389,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 337399317}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnOptionScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Option
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &337399317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1711,7 +1739,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &469709486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2073,7 +2101,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnSFXVolume
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &542988157
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,7 +2204,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnMusicVolume
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &545011145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2247,7 +2299,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 545011148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnTitleScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &545011148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2579,15 +2643,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 682012785}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: [{m_Target: {fileID: 2085590284}, m_TargetAssemblyTypeName: 'GameController,
-            Assembly-CSharp', m_MethodName: OnPause, m_Mode: 1, m_Arguments: {m_ObjectArgument: {
-              fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object, UnityEngine',
-            m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: '', m_BoolArgument: 0},
-          m_CallState: 2}, {m_Target: {fileID: 2085590284}, m_TargetAssemblyTypeName: 'GameController,
-            Assembly-CSharp', m_MethodName: OnLoadMenuScene, m_Mode: 5, m_Arguments: {
-            m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
-              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: MainMenu,
-            m_BoolArgument: 0}, m_CallState: 2}]
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnLoadMenuScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MainMenu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &682012785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3179,7 +3259,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 854466865}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnTitleScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &854466865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3840,7 +3932,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 948010817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnLoadGameScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &948010817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4685,7 +4789,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1250288062}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1250288062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5393,11 +5509,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1477696457}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: [{m_Target: {fileID: 2085590284}, m_TargetAssemblyTypeName: 'GameController,
-            Assembly-CSharp', m_MethodName: OnOptionScreen, m_Mode: 1, m_Arguments: {
-            m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
-              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: '',
-            m_BoolArgument: 0}, m_CallState: 2}]
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnOptionScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1477696457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5807,11 +5931,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1606222413}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: [{m_Target: {fileID: 2085590284}, m_TargetAssemblyTypeName: 'GameController,
-            Assembly-CSharp', m_MethodName: OnLoadMenuScene, m_Mode: 5, m_Arguments: {
-            m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
-              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: MainMenu,
-            m_BoolArgument: 0}, m_CallState: 2}]
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnLoadMenuScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MainMenu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1606222413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5932,7 +6064,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1608161566}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnCreditsScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Credits
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1608161566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7429,7 +7573,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2085590284}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: OnMasterVolume
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2060971966
 GameObject:
   m_ObjectHideFlags: 0
