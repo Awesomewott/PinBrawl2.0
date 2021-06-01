@@ -82,6 +82,7 @@ public class GameController : MonoBehaviour
     public void OnTitleScreen()
     {
         titleScreen.SetActive(true);
+        CreditsScreen.SetActive(false);
         optionScreen.SetActive(false);
     }
 
@@ -119,6 +120,10 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void StopGame()
+    {
+        Application.Quit();
+    }
     public void OnDeathScreen()
     {
       if(isDead)
