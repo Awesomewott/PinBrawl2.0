@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc52a6471e8109f43bbaa45fc11561d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bumperForce: 500
+  bumperForce: 200
 --- !u!58 &352791640
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc52a6471e8109f43bbaa45fc11561d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bumperForce: 500
+  bumperForce: 200
 --- !u!58 &699373659
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1652,11 +1652,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1563116605 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1979122107507534251, guid: 3df4bd0b4cda0704090d88f10226f14b, type: 3}
-  m_PrefabInstance: {fileID: 1979122108767186326}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1668431826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1964,7 +1959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc52a6471e8109f43bbaa45fc11561d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bumperForce: 500
+  bumperForce: 200
 --- !u!58 &1728798202
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2099,7 +2094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc52a6471e8109f43bbaa45fc11561d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bumperForce: 500
+  bumperForce: 200
 --- !u!58 &1895598125
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2375,7 +2370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be74a8b550f697647b0b204bb965ac58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newBall: {fileID: 1563116605}
+  newBall: {fileID: 1979122107507534251, guid: 3df4bd0b4cda0704090d88f10226f14b, type: 3}
 --- !u!61 &1956652760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2386,7 +2381,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.15509605, y: -2.946829}
@@ -2410,7 +2405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956652758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.31, y: -6.41, z: -2.3152146}
+  m_LocalPosition: {x: -0.31, y: -7.68, z: -2.3152146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2469,7 +2464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc52a6471e8109f43bbaa45fc11561d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bumperForce: 500
+  bumperForce: 200
 --- !u!58 &2019932816
 CircleCollider2D:
   m_ObjectHideFlags: 0
