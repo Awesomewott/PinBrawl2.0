@@ -7762,13 +7762,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 006c507144b840f4f972ac87435ada83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleScreen: {fileID: 0}
-  optionScreen: {fileID: 0}
-  CreditsScreen: {fileID: 0}
-  pauseScreen: {fileID: 0}
-  deathScreen: {fileID: 0}
-  audioMixer: {fileID: 0}
-  masterSlider: {fileID: 0}
+  titleScreen: {fileID: 1816531358}
+  optionScreen: {fileID: 576311687}
+  CreditsScreen: {fileID: 469709485}
+  pauseScreen: {fileID: 1859761880}
+  deathScreen: {fileID: 831397841}
+  audioMixer: {fileID: 24100000, guid: 9b5f70f69a470f2418a6a473d601a1b4, type: 2}
+  masterSlider: {fileID: 2051460581}
 --- !u!4 &2085590285
 Transform:
   m_ObjectHideFlags: 0
