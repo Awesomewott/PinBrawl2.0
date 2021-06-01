@@ -10,6 +10,11 @@ public class Launcher : MonoBehaviour
 
     public bool isActive = true;
 
+    public Transform start;
+    public Transform end;
+
+    public Rigidbody2D ball;
+
     private float pressTime = 0f;
     private float startTime = 0f;
     private int powerIndex;
@@ -20,6 +25,7 @@ public class Launcher : MonoBehaviour
     public float maxForce = 90f;
 
     bool isPrevKeyPress = false;
+    float forceTime = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +45,7 @@ public class Launcher : MonoBehaviour
 
         if (Input.GetKeyUp("space"))
         {
+            forceTime = 0;
             isKeyPress = false;
             Debug.Log("Unpressed");
         }
@@ -46,16 +53,16 @@ public class Launcher : MonoBehaviour
         // held
         if (isKeyPress)
         {
-            Debug.Log("Held");
-            Vector3 position = transform.position;
-            position.y -= 0.5f * Time.deltaTime;
-            transform.position = position;
+            forceTime += Time.deltaTime;
+            transform.position = Vector2.Lerp(start.position, end.position, forceTime);
         }
 
         // release
-        if (isKeyPress == false && isPrevKeyPress == true)
+        if (isKeyPress == false)
         {
-            
+            //ball.AddForce(transform.up * 1);
+            transform.position = Vector2.Lerp(transform.position, start.position, Time.deltaTime * 10);
+
         }
 
 
