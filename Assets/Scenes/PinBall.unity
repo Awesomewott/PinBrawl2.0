@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 352791644}
   m_Layer: 0
   m_Name: Bumper 1
-  m_TagString: Untagged
+  m_TagString: Bumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -696,6 +696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumperForce: 300
+  score: 0
   animator: {fileID: 352791644}
 --- !u!58 &352791640
 CircleCollider2D:
@@ -1384,7 +1385,7 @@ GameObject:
   - component: {fileID: 699373662}
   m_Layer: 0
   m_Name: Bumper 5
-  m_TagString: Untagged
+  m_TagString: Bumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1423,6 +1424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumperForce: 300
+  score: 0
   animator: {fileID: 699373662}
 --- !u!58 &699373659
 CircleCollider2D:
@@ -2428,6 +2430,25 @@ Transform:
   m_Father: {fileID: 310801974}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -47.845}
+--- !u!1 &1376217818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1979122107507534251, guid: 3df4bd0b4cda0704090d88f10226f14b, type: 3}
+  m_PrefabInstance: {fileID: 1979122108767186326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1376217823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376217818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4850994460708ab429adf123c718e8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTxt: {fileID: 458684814}
+  score: 0
 --- !u!1 &1414829828
 GameObject:
   m_ObjectHideFlags: 0
@@ -3186,7 +3207,7 @@ GameObject:
   - component: {fileID: 1728798205}
   m_Layer: 0
   m_Name: Bumper 2
-  m_TagString: Untagged
+  m_TagString: Bumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3225,6 +3246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumperForce: 300
+  score: 0
   animator: {fileID: 1728798205}
 --- !u!58 &1728798202
 CircleCollider2D:
@@ -3342,7 +3364,7 @@ GameObject:
   - component: {fileID: 1895598128}
   m_Layer: 0
   m_Name: Bumper 3
-  m_TagString: Untagged
+  m_TagString: Bumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3381,6 +3403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumperForce: 300
+  score: 0
   animator: {fileID: 1895598128}
 --- !u!58 &1895598125
 CircleCollider2D:
@@ -3812,7 +3835,7 @@ GameObject:
   - component: {fileID: 2019932819}
   m_Layer: 0
   m_Name: Bumper 4
-  m_TagString: Untagged
+  m_TagString: Bumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3851,6 +3874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumperForce: 300
+  score: 0
   animator: {fileID: 2019932819}
 --- !u!58 &2019932816
 CircleCollider2D:
@@ -4073,7 +4097,7 @@ GameObject:
   - component: {fileID: 2126173180}
   - component: {fileID: 2126173179}
   m_Layer: 5
-  m_Name: ScoreTxt
+  m_Name: Lives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
