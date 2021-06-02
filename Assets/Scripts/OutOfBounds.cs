@@ -31,6 +31,14 @@ public class OutOfBounds : MonoBehaviour
         {
             Destroy(lifeThree);
         }
+        if(lives < 0)
+        {
+            OnDeath();
+        }
+    }
 
+    public void OnDeath()
+    {
+        EventManager.Instance.TriggerEvent("PlayerDead");
     }
 }
