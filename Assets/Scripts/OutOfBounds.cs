@@ -10,6 +10,7 @@ public class OutOfBounds : MonoBehaviour
     public GameObject lifeThree;
     public int lives = 3;
 
+    GameController gameController = new GameController();
     private void OnCollisionEnter2D(Collision2D obj)
     {
         lives--;
@@ -39,6 +40,7 @@ public class OutOfBounds : MonoBehaviour
 
     public void OnDeath()
     {
-        EventManager.Instance.TriggerEvent("PlayerDead");
+        Debug.Log("Dead"); 
+        GameController.Instance.OnDeathScreen();
     }
 }

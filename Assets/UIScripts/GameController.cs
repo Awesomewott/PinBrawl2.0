@@ -57,6 +57,10 @@ public class GameController : MonoBehaviour
     {
        
         titleScreen.SetActive(false);
+        deathScreen.SetActive(false);
+        optionScreen.SetActive(false);
+        CreditsScreen.SetActive(false);
+        pauseScreen.SetActive(false);
         SceneManager.LoadScene(sceneName);
 
         yield return null;
@@ -84,6 +88,7 @@ public class GameController : MonoBehaviour
         titleScreen.SetActive(true);
         CreditsScreen.SetActive(false);
         optionScreen.SetActive(false);
+        deathScreen.SetActive(false);
     }
 
     public void OnOptionScreen()
