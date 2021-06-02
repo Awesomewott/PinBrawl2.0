@@ -6,12 +6,14 @@ public class Kicker : MonoBehaviour
 {
     //public AudioSource kickout;
     //public AudioSource kickout2;
+    ParticleSystem particle;
     float timer = 0;
     float hit;
     // Start is called before the first frame update
     void Start()
     {
         GetComponent<PointEffector2D>().enabled = false;
+        particle = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -27,6 +29,8 @@ public class Kicker : MonoBehaviour
             //kickout2.Play();
             timer = 0;
         }
+
+        particle.Play();
     }
 
      void OnTriggerEnter2D(Collider2D collision)

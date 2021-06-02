@@ -10,6 +10,7 @@ public class Bumper : MonoBehaviour
     private GameObject player;
     private Rigidbody2D bumper;
     //public TMP_Text scoreTxt;
+      ParticleSystem particle;
 
     public int score = 100;
 
@@ -19,8 +20,10 @@ public class Bumper : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
 
+        particle = GetComponent<ParticleSystem>();
+        
     }
-
+   
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //scoreTxt.text = score.ToString();
@@ -32,8 +35,9 @@ public class Bumper : MonoBehaviour
         animator.SetTrigger("Hit5");
         animator.SetTrigger("Hit6");
         animator.SetTrigger("Hit7");
+        particle.Play(true);
         collision.rigidbody.AddForce(-collision.GetContact(0).normal * 15, ForceMode2D.Impulse);
-
         
+
     }
 }
