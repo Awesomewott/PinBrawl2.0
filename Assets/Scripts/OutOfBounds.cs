@@ -13,7 +13,7 @@ public class OutOfBounds : MonoBehaviour
 
             GameObject newObj = Instantiate(newBall);
             
-            newObj.transform.position = new Vector3(0.87f, 5.01f, 0f);
+            newObj.transform.position = new Vector3(Random.Range(-1.0f,1.0f), 5.01f, 0f);
 
         
     }
