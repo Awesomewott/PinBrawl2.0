@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/PinBall.unity
+    guid: 90cb81ef8223c1f48b5e7070b5418208
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ab44c3c5388e6af4bb5daebc67e63c9e
+  - enabled: 1
+    path: Assets/Scenes/GameController.unity
+    guid: dd9f1ee649458bf4b831f9729856d6c7
   m_configObjects: {}
