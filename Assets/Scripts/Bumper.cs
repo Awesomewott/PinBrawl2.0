@@ -22,6 +22,10 @@ public class Bumper : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         animator.SetTrigger("Hit");
+        animator.SetTrigger("Hit2");
+        animator.SetTrigger("Hit3");
+        animator.SetTrigger("Hit4");
+        animator.SetTrigger("Hit5");
         collision.rigidbody.AddForce(-collision.GetContact(0).normal * 15, ForceMode2D.Impulse);
     }
 }
