@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1979122107507534249}
   - component: {fileID: 1979122107507534248}
   - component: {fileID: 1979122107507534295}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ball
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -96,8 +96,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 3
+  m_LinearDrag: 0.05
   m_AngularDrag: 0.05
   m_GravityScale: 0.5
   m_Material: {fileID: 6200000, guid: 9f2805c90c2f17940bcfc74f6e3c49d1, type: 2}
