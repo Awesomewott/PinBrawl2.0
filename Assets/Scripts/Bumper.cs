@@ -8,6 +8,7 @@ public class Bumper : MonoBehaviour
     public int bumperForce = 800;
     private GameObject player;
     private Rigidbody2D bumper;
+    public ParticleSystem particle;
 
     public Animator animator;
 
@@ -27,5 +28,6 @@ public class Bumper : MonoBehaviour
         animator.SetTrigger("Hit4");
         animator.SetTrigger("Hit5");
         collision.rigidbody.AddForce(-collision.GetContact(0).normal * 15, ForceMode2D.Impulse);
+        particle.Play();
     }
 }
