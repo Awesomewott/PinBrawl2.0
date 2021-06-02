@@ -3752,6 +3752,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newBall: {fileID: 1979122107507534251, guid: 3df4bd0b4cda0704090d88f10226f14b, type: 3}
+  lifeOne: {fileID: 1545132332}
+  lifeTwo: {fileID: 1933250990}
+  lifeThree: {fileID: 1302334988}
+  lives: 3
 --- !u!61 &1956652760
 BoxCollider2D:
   m_ObjectHideFlags: 0
