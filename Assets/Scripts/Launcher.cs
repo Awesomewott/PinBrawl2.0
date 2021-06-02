@@ -10,6 +10,11 @@ public class Launcher : MonoBehaviour
 
     public bool isActive = true;
 
+    public Transform start;
+    public Transform end;
+
+    public Rigidbody2D ball;
+
     private float pressTime = 0f;
     private float startTime = 0f;
     private int powerIndex;
@@ -18,6 +23,9 @@ public class Launcher : MonoBehaviour
     private Rigidbody2D rb;
     private float force = 0f;
     public float maxForce = 90f;
+
+    bool isPrevKeyPress = false;
+    float forceTime = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,65 +37,78 @@ public class Launcher : MonoBehaviour
 
     void Update()
     {
-        if (isActive)
+        if (Input.GetKeyDown("space"))
         {
-            if (Input.GetKeyDown("space"))
-            {
-                isKeyPress = true;
-                Debug.Log("Pressed");
-            }
-
-            if (Input.GetKeyUp("space"))
-            {
-                isKeyPress = false;
-                Debug.Log("Unpressed");
-            }
-
-            // on keyboard press or touch hotspot
-            if (isKeyPress == true && isTouched == false || isKeyPress == false && isTouched == true)
-            {
-                if (startTime == 0f)
-                {
-                    startTime = Time.time;
-                    //pullSound.Play();
-                }
-            }
-
-            // on keyboard release 
-            if (isKeyPress == false && isTouched == false && startTime != 0f)
-            {
-                // #1
-                force = powerIndex * maxForce;
-                //shootSound.Play();
-                // reset values & animation
-                pressTime = 0f;
-                startTime = 0f;
-                //efxLightRenderer.sprite = efxLightAniController.spriteSet[1];
-                while (powerIndex >= 0)
-                {
-                    //efxZoomRenderer.sprite = efxZoomAniController.spriteSet[powerIndex];
-                    powerIndex--;
-                }
-            }
+            isKeyPress = true;
+            Debug.Log("Pressed");
         }
 
-/*        // Start Press
-        if (startTime != 0f)
+        if (Input.GetKeyUp("space"))
         {
-            pressTime = Time.time - startTime;
-            // plays zoom animation on loop
-            powerIndex = (int)Mathf.PingPong(pressTime * efxZoomAniController.fps, efxZoomAniController.spriteSet.Length);
-            efxZoomRenderer.sprite = efxZoomAniController.spriteSet[powerIndex];
-            // turns on/ off zoom light based on powerIndex
-            if (powerIndex == efxZoomAniController.spriteSet.Length - 1)
-            {
-                efxLightRenderer.sprite = efxLightAniController.spriteSet[0];
-            }
-            else
-            {
-                efxLightRenderer.sprite = efxLightAniController.spriteSet[1];
-            }
-        }*/
+            forceTime = 0;
+            isKeyPress = false;
+            Debug.Log("Unpressed");
+        }
+
+        // held
+        if (isKeyPress)
+        {
+            forceTime += Time.deltaTime;
+            transform.position = Vector2.Lerp(start.position, end.position, forceTime);
+        }
+
+        // release
+        if (isKeyPress == false)
+        {
+            //ball.AddForce(transform.up * 1);
+            transform.position = Vector2.Lerp(transform.position, start.position, Time.deltaTime * 10);
+
+        }
+
+
+        isPrevKeyPress = isKeyPress;
+
+        /*       if (isActive)
+               {
+                   if (Input.GetKeyDown("space"))
+                   {
+                       isKeyPress = true;
+                       Debug.Log("Pressed");
+                   }
+
+                   if (Input.GetKeyUp("space"))
+                   {
+                       isKeyPress = false;
+                       Debug.Log("Unpressed");
+                   }
+
+                   // on keyboard press or touch hotspot
+                   if (isKeyPress == true && isTouched == false || isKeyPress == false && isTouched == true)
+                   {
+                       if (startTime == 0f)
+                       {
+                           startTime = Time.time;
+                           //pullSound.Play();
+                       }
+                   }
+
+                   // on keyboard release 
+                   if (isKeyPress == false && isTouched == false && startTime != 0f)
+                   {
+                       // #1
+                       force = powerIndex * maxForce;
+                       //shootSound.Play();
+                       // reset values & animation
+                       pressTime = 0f;
+                       startTime = 0f;
+                       //efxLightRenderer.sprite = efxLightAniController.spriteSet[1];
+                       while (powerIndex >= 0)
+                       {
+                           //efxZoomRenderer.sprite = efxZoomAniController.spriteSet[powerIndex];
+                           powerIndex--;
+                       }
+                   }
+               }*/
     }
 
     private void FixedUpdate()
