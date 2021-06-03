@@ -41,6 +41,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            Score.Instance.SetScore();
             collision.rigidbody.AddForce(-collision.GetContact(0).normal * 15, ForceMode2D.Impulse);
             Destroy(this.gameObject);
         }
@@ -48,6 +49,12 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag == "Bumper")
         {
             Physics2D.IgnoreCollision(collision.collider, GetComponent<CircleCollider2D>(), true);//bumper.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
+        }
+
+        if(collision.gameObject.tag == "OutOfBounds")
+        {
+            Score.Instance.TakeScore();
+            Destroy(this.gameObject);
         }
 
 

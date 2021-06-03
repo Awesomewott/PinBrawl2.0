@@ -22,4 +22,10 @@ public class Score : MonoBehaviour
         scoreTxt.text = score.ToString();
     }
 
+    public void TakeScore()
+    {
+        score -= 100;
+        scoreTxt.text = score.ToString();
+    }
+
 }
