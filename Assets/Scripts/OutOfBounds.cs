@@ -14,7 +14,7 @@ public class OutOfBounds : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D obj)
     {
         lives--;
-        Destroy(obj.gameObject);
+        
 
         GameObject newObj = Instantiate(newBall);
             
@@ -36,6 +36,8 @@ public class OutOfBounds : MonoBehaviour
         {
             OnDeath();
         }
+
+        Destroy(obj.gameObject);
     }
 
     public void OnDeath()
