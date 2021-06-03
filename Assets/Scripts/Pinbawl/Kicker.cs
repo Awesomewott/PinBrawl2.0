@@ -6,6 +6,7 @@ public class Kicker : MonoBehaviour
 {
     public AudioSource kickout;
     public AudioSource kickout2;
+    ParticleSystem particle;
     float timer = 0;
     float hit;
     // Start is called before the first frame update

@@ -52,6 +52,7 @@ public class Bumper : MonoBehaviour
     public int bumperForce = 800;
     private GameObject player;
     private Rigidbody2D bumper;
+    ParticleSystem particle;
 
     public AudioMixer sfxMixer;
     public AudioSource bumperSound;
@@ -64,6 +65,7 @@ public class Bumper : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        particle = GetComponent<ParticleSystem>();
 
     }
 
@@ -76,6 +78,7 @@ public class Bumper : MonoBehaviour
         animator.SetTrigger("Hit5");
         animator.SetTrigger("Hit6");
         animator.SetTrigger("Hit7");
+        particle.Play();
         collision.rigidbody.AddForce(-collision.GetContact(0).normal * 15, ForceMode2D.Impulse);
         bumperSound.Play();
     }
