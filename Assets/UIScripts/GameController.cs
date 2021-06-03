@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
     public GameObject deathScreen;
 
     public AudioMixer audioMixer;
+    public AudioSource TitleMusic;
 
     public Slider masterSlider;
 
@@ -48,7 +49,7 @@ public class GameController : MonoBehaviour
         titleScreen.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
+        TitleMusic.Stop();
         //StartCoroutine(LoadGameScene(sceneName));
         SceneManager.LoadScene(sceneName);
     }

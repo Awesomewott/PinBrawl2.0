@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Bumper : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class Bumper : MonoBehaviour
     public int bumperForce = 800;
     private GameObject player;
     private Rigidbody2D bumper;
+
+    public AudioMixer sfxMixer;
+    public AudioSource bumperSound;
     //public TMP_Text scoreTxt;
 
     //public int score = 100;
@@ -23,9 +27,6 @@ public class Bumper : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //scoreTxt.text = score.ToString();
-        //Debug.Log(score);
-        //Score.curScore += 100;
         animator.SetTrigger("Hit");
         animator.SetTrigger("Hit2");
         animator.SetTrigger("Hit3");
@@ -34,7 +35,6 @@ public class Bumper : MonoBehaviour
         animator.SetTrigger("Hit6");
         animator.SetTrigger("Hit7");
         collision.rigidbody.AddForce(-collision.GetContact(0).normal * 15, ForceMode2D.Impulse);
-
-        
+        bumperSound.Play();
     }
 }
