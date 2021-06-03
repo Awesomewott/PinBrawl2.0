@@ -9,6 +9,7 @@ public class Bumper : MonoBehaviour
     public int bumperForce = 800;
     private GameObject player;
     private Rigidbody2D bumper;
+    
     //public TMP_Text scoreTxt;
       ParticleSystem particle;
 
@@ -29,6 +30,7 @@ public class Bumper : MonoBehaviour
         //scoreTxt.text = score.ToString();
         //Debug.Log(score);
         //Score.curScore += 100;
+        
         animator.SetTrigger("Hit");
         animator.SetTrigger("Hit2");
         animator.SetTrigger("Hit3");
