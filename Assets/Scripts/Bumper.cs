@@ -7,6 +7,7 @@ public class Bumper : MonoBehaviour
 
     public int bumperForce = 800;
     private GameObject player;
+    public GameObject enemy;
     private Rigidbody2D bumper;
 
     public Animator animator;
@@ -16,6 +17,7 @@ public class Bumper : MonoBehaviour
 
         Debug.Log("I was touched");
         player = GameObject.FindGameObjectWithTag("Player");
+        
 
     }
 
@@ -28,5 +30,7 @@ public class Bumper : MonoBehaviour
         animator.SetTrigger("Hit5");
         animator.SetTrigger("Hit6");
         collision.rigidbody.AddForce(-collision.GetContact(0).normal * 15, ForceMode2D.Impulse);
+
+        
     }
 }

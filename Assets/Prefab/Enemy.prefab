@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1503140214583650569}
   - component: {fileID: 1503140214583650568}
   - component: {fileID: 1503140214583650571}
-  - component: {fileID: -3828255662858648198}
+  - component: {fileID: 4242889187397872632}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Target
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1503140214583650583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.40911484, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.35, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -118,11 +118,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4098084f40dc9ee4d801675cea290fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  moveSpeed: 2
+  target: {fileID: 4947860854204113683, guid: 4d1654192d6919b4e9bd98dbc168480d, type: 3}
+  player: {fileID: 1979122107507534251, guid: 3df4bd0b4cda0704090d88f10226f14b, type: 3}
+  bumper: {fileID: 191128389315590092, guid: 37fd4c9546d2956409265bea6e792e6c, type: 3}
+  moveSpeed: 0.75
   rb: {fileID: 1503140214583650568}
---- !u!61 &-3828255662858648198
-BoxCollider2D:
+--- !u!58 &4242889187397872632
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -135,15 +137,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8, y: 1.6}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8, y: 1.6}
-  m_EdgeRadius: 0
+  m_Radius: 0.7
