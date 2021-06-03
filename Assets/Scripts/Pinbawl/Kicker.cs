@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Kicker : MonoBehaviour
 {
-    //public AudioSource kickout;
-    //public AudioSource kickout2;
+    public AudioSource kickout;
+    public AudioSource kickout2;
     float timer = 0;
     float hit;
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class Kicker : MonoBehaviour
         if(timer > 3)
         {
             GetComponent<PointEffector2D>().enabled = false;
-            //kickout2.Play();
+            kickout2.Play();
             timer = 0;
         }
     }
@@ -34,7 +34,7 @@ public class Kicker : MonoBehaviour
         if(hit > 0)
         {
             GetComponent<PointEffector2D>().enabled = true;
-            //kickout.Play();
+            kickout.Play();
             hit = 0;
         }
         else
