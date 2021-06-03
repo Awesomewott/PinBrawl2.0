@@ -8,11 +8,14 @@ public class OutOfBounds : MonoBehaviour
     public GameObject lifeOne;
     public GameObject lifeTwo;
     public GameObject lifeThree;
+    //public GameObject 
     public int lives = 3;
 
     GameController gameController = new GameController();
     private void OnCollisionEnter2D(Collision2D obj)
     {
+
+
         lives--;
         
 
