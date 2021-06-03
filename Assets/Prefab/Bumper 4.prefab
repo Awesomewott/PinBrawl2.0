@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6156558451127335201}
   m_Layer: 0
   m_Name: Bumper 4
-  m_TagString: Untagged
+  m_TagString: Bumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumperForce: 500
+  animator: {fileID: 0}
 --- !u!50 &6739394092955401475
 Rigidbody2D:
   serializedVersion: 4

@@ -11,7 +11,7 @@ public class Bumper : MonoBehaviour
     private Rigidbody2D bumper;
     //public TMP_Text scoreTxt;
 
-    public int score = 100;
+    //public int score = 100;
 
     public Animator animator;
 
@@ -25,6 +25,7 @@ public class Bumper : MonoBehaviour
     {
         //scoreTxt.text = score.ToString();
         //Debug.Log(score);
+        //Score.curScore += 100;
         animator.SetTrigger("Hit");
         animator.SetTrigger("Hit2");
         animator.SetTrigger("Hit3");
