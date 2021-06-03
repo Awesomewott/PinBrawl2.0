@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour
                 EnemyCount = 0;
             }
 
-        } while (EnemyCount < 5);
+        } while (EnemyCount < 10);
 
 
 
