@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3019145830933769729}
   m_Layer: 0
   m_Name: MovingBumper
-  m_TagString: Untagged
+  m_TagString: Bumper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumperForce: 500
-  score: 100
   animator: {fileID: 0}
 --- !u!50 &3019145830933769730
 Rigidbody2D:
