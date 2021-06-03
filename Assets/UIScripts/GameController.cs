@@ -47,10 +47,14 @@ public class GameController : MonoBehaviour
     public void OnLoadGameScene(string sceneName)
     {
         titleScreen.SetActive(false);
+        deathScreen.SetActive(false);
+        optionScreen.SetActive(false);
+        CreditsScreen.SetActive(false);
+        pauseScreen.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         TitleMusic.Stop();
-        //StartCoroutine(LoadGameScene(sceneName));
+        //StartCoroutine((string)(LoadMenuScene(sceneName)));
         SceneManager.LoadScene(sceneName);
     }
 
@@ -58,10 +62,10 @@ public class GameController : MonoBehaviour
     {
        
         titleScreen.SetActive(false);
-        deathScreen.SetActive(false);
-        optionScreen.SetActive(false);
-        CreditsScreen.SetActive(false);
-        pauseScreen.SetActive(false);
+        //deathScreen.SetActive(false);
+        //optionScreen.SetActive(false);
+        //CreditsScreen.SetActive(false);
+        //pauseScreen.SetActive(false);
         SceneManager.LoadScene(sceneName);
 
         yield return null;
@@ -72,7 +76,7 @@ public class GameController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        //StartCoroutine((LoadMenuScene(sceneName));
+        //StartCoroutine((string)(LoadMenuScene(sceneName)));
         SceneManager.LoadScene(sceneName);
     }
 
