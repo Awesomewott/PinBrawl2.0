@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Bumper : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Bumper : MonoBehaviour
     private GameObject player;
     public GameObject enemy;
     private Rigidbody2D bumper;
+
 
     public Animator animator;
 
@@ -32,7 +34,8 @@ public class Bumper : MonoBehaviour
         animator.SetTrigger("Hit5");
         animator.SetTrigger("Hit6");
         collision.rigidbody.AddForce(-collision.GetContact(0).normal * 15, ForceMode2D.Impulse);
-        
+
+        bumperSound.Play();
 
     }
 }
