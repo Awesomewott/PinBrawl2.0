@@ -18,9 +18,10 @@ public class Ball : MonoBehaviour
     {
         if (collision.collider.tag == "Bumper")
         {
-            score += 100;
-            scoreTxt.text = score.ToString();
-            Debug.Log(score);
+            Score.Instance.SetScore();
+            //Score.curScore += 100;
+            //scoreTxt.text = Score.curScore.ToString();
+            //Debug.Log(Score.curScore);
         }
     }
 
